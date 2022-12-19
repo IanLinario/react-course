@@ -1,15 +1,14 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { dark } from './styles/themes'
-import GlobalStyles from './styles/GlobalStyles'
+import { defaultTheme } from './styles/stitches.config'
+import { globalStyles } from './styles/GlobalStyles'
 import Layout from './components/Layout'
 
 const App: React.FC = () => {
     return (
-        <ThemeProvider theme={dark}>
-            <GlobalStyles/>
-            <Layout/>
-        </ThemeProvider>
+        <div className={defaultTheme}>
+            {globalStyles()}
+            <Layout />
+        </div>
     )
 }
 

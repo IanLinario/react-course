@@ -1,11 +1,12 @@
-import styled from "styled-components";
+import { styled } from "../../styles/stitches.config";
 
-export const StyleContainer = styled.div`
-    display: grid;
-    grid-template-columns: 80px auto;
-    grid-template-rows: 20px auto;
-    grid-template-areas:
+export const StyleContainer = styled('div', {
+    display: "grid",
+    gridTemplateColumns: "80px auto",
+    gridTemplateRows: "20px auto",
+    gridTemplateAreas: `
     'AS MH'
-    'AS CT';
-    height: 100vh;
-`;
+    'AS CT'
+    `,
+    height: "100vh"
+})

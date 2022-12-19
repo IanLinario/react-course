@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import { styled } from "../../styles/stitches.config";
 
-export const StyleContainer = styled.div`
-    grid-area: CT;
-    background-color: ${props => props.theme.colors.primary};
-`;
+export const StyleContainer = styled('div', {
+    gridArea: 'CT',
+    backgroundColor: '$primary'
+})
